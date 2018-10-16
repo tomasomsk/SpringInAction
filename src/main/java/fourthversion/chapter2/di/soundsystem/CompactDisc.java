@@ -1,4 +1,4 @@
-package fourthversion.di.soundsystem;
+package fourthversion.chapter2.di.soundsystem;
 
 public interface CompactDisc {
 

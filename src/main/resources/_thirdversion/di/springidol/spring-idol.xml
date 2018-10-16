@@ -6,6 +6,18 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <!-- Здесь должны находиться объявления компонентов -->
 
     <bean id="duke"
-          class="_thirdversion.di.springidol.Juggler" />
+          class="_thirdversion.di.springidol.PoeticJuggler">
+        <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+
+    <bean id="sonnet29"
+          class="_thirdversion.di.springidol.Sonnet29">
+    </bean>
+
+    <bean id="stage"
+          class="_thirdversion.di.springidol.Stage"
+          factory-method="getInstance"/>
+
 
 </beans>
